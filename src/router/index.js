@@ -24,7 +24,7 @@ export default new Router({
       childern: [
         {
           path: 'test1',
-          name: 'test1',
+          name: '/test/test1',
           component: Test1
         }, {
           path: 'test2',
