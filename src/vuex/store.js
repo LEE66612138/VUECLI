@@ -32,9 +32,16 @@ const actions = {
     }, 2000)
   }
 }
-export default new Vuex.Store({
+
+const moduleA = {
   state,
   mutations,
   getters,
   actions
+}
+
+export default new Vuex.Store({
+  module: {
+    a: moduleA
+  }
 })
